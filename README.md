@@ -1,109 +1,79 @@
-# Accenture Cloud Security Industry Lab
-##  Certificate of Completion  
-
-[Accenture Cloud Security Certificate](https://github.com/YeranG30/Accenture-Cloud-Security-/blob/main/AccentureCloudSecurityCertificate.pdf)
-
-**Issued by Accenture – March 2025**  
-Completed via Forage’s Cloud Security Virtual Experience Program
-
-This repository captures my work during Accenture's industry-sponsored Cloud Security Lab. The program simulated real-world security consulting engagements for a healthcare technology firm, with a focus on cloud architecture, scalable IAM, secure SDLC practices, and production-ready incident response.
-
-
-### **Overview**  
-The Accenture Cloud Security Virtual Experience Program provided a realistic simulation of security consulting for Digital Health, a healthcare technology company. Through five intensive tasks, I helped design a secure, scalable cloud infrastructure while balancing compliance and engineering requirements.  Add commentMore actions
-
-**Key Improvements from Original:**  
-- Added explicit focus on scalability and incident response  
-- Removed redundant resume alignment section  
-- Strengthened real-world applicability  
+# Accenture Cloud Security Externship  
+**March 2025 – May 2025**  
+Remote (Virtual Experience) – Sponsored by Accenture
 
 ---
 
-### **Task 2 (Enhanced): Security Maturity and IAM Analysis at Scale**  
-
-**Objective:**  
-Elevate IAM practices from NIST CSF Tier 1 (Partial) to Tier 2 (Risk-Informed) while ensuring enterprise scalability.  
-
-**Scalability Execution:**  
-- Designed **group-based RBAC with attribute-based conditions** to support 10,000+ employees  
-- Proposed **AWS Organizations SCPs** to enforce guardrails across multiple business units  
-- Architected **just-in-time access workflows** using AWS IAM Identity Center to reduce standing privileges  
-- Implemented **automated permission auditing** with AWS Access Analyzer to detect overprivileged roles  
-
-**Incident Response Integration:**  
-- Built **IAM breach detection** by:  
-  - Configuring CloudTrail logs to feed into SIEM  
-  - Creating Lambda functions to alert on suspicious privilege escalation  
-  - Developing runbooks for IAM compromise scenarios  
-- Established **S3 leak response plan**:  
-  - Automated detection via Macie/GuardDuty  
-  - Prepared isolation and rotation procedures for exposed credentials  
+## Overview  
+This externship was part of Accenture’s Cloud Security Virtual Experience Program, simulating real-world security consulting for a healthcare‑tech client (Digital Health). Over five tasks, I focused on cloud architecture, IAM scalability, secure SDLC, testing, and delivery best practices, collaborating with simulated infrastructure, development, and security teams.
 
 ---
 
-### **Task 3 (Enhanced): SSDLC for 1,000+ Microservices**  
+## Task 1: Cloud Architecture Review  
+**Objective:** Determine optimal AWS infrastructure strategy balancing cost, scalability, and compliance.
 
-**Scalability Execution:**  
-- Designed **security-as-code pipeline** using:  
-  - GitHub Actions matrix strategies for parallel security scanning  
-  - Policy-as-code with Open Policy Agent (OPA)  
-  - Automated exemption management for high-velocity teams  
-- Created **service ownership mapping** to:  
-  - Automatically route findings to correct teams  
-  - Enforce SLAs for vulnerability remediation  
-- Implemented **progressive rollout** of security gates:  
-  - Phase 1: Critical services only  
-  - Phase 2: Tier 1 microservices  
-  - Phase 3: Organization-wide enforcement  
-
-**Incident Response Integration:**  
-- Established **build-time IR capabilities**:  
-  - Automated quarantining of vulnerable artifacts  
-  - Breakglass access procedures for emergency fixes  
-  - Forensic evidence preservation in CI/CD logs  
+**Deliverables:**
+- Evaluated IaaS vs. PaaS options based on client technical and compliance needs.
+- Applied the AWS Well‑Architected Framework to reinforce design principles.
+- Proposed migration plans to enhance operational resilience and reduce vendor lock‑in.
 
 ---
 
+## Task 2: IAM Design & Security Maturity Assessment  
+**Objective:** Elevate IAM governance to NIST CSF Tier 2 (Risk‑Informed) standard.
 
-### **Key Takeaways (Enhanced)**  
-
-1. **Scalable Security Design:**  
-   - Proven ability to design controls that work for 10+ employees or 10,000+  
-   - Deep understanding of AWS multi-account security  
-
-2. **Production-Grade Incident Readiness:**  
-   - Built detection and response into every security layer  
-   - Balanced security with operational needs  
-
-3. **Framework Fluency:**  
-   - AWS Well-Architected Framework  
-   - NIST CSF  
-   - MITRE ATT&CK Cloud Matrix  
-
-4. **Toolchain Expertise:**  
-   - AWS Native Security (IAM, SCPs, GuardDuty)  
-   - CI/CD Security (GitHub Actions, Snyk, OPA)  
-   - Infrastructure-as-Code (Terraform)  
+**Deliverables:**
+- Assessed IAM policies and roles across business units; highlighted privilege misalignments.
+- Recommended group‑based RBAC with attribute‑based access logic for enterprise scale.
+- Proposed AWS Organizations SCPs and IAM Identity Center for centralized permission enforcement.
+- Created IAM audit and response playbooks using CloudTrail and Access Analyzer.
 
 ---
 
-### **Final Thoughts**  
-This experience transformed my approach to cloud security - from theoretical knowledge to operational reality. By focusing on both prevention (through scalable architecture) and response (via embedded detection), I developed solutions that would meet the demands of FAANG-scale environments while remaining practical for real-world deployment.  
+## Task 3: Secure SDLC Implementation  
+**Objective:** Integrate security into the CI/CD pipeline using code-based practices.
 
-The program particularly strengthened my ability to:  
-- Translate compliance requirements into automated controls  
-- Design security systems that scale exponentially  
-- Embed incident response capabilities proactively  
+**Deliverables:**
+- Performed SAST to uncover vulnerabilities like path traversal and IDOR.
+- Built security-as-code GitHub Actions workflows using Snyk and policy gates.
+- Introduced exemption workflows and staged rollouts to protect developer agility.
+- Documented SSDLC process tailored to Agile team environments.
 
-**Tools & Frameworks Mastered:**  
-- *Scalability:* AWS Organizations, SCPs, IAM Identity Center  
-- *Incident Response:* AWS GuardDuty, Lambda automation  
-- *Security-as-Code:* Terraform, OPA, GitHub Actions  
 ---
 
-### Tools & Frameworks
+## Task 4: Testing & Validation  
+**Objective:** Ensure security controls function as intended through structured testing.
 
-* AWS: IAM, GuardDuty, Organizations, CloudTrail, S3, Macie
-* IaC: Terraform, OPA, GitHub Actions
-* Frameworks: NIST CSF, AWS Well-Architected, MITRE ATT&CK Cloud
+**Deliverables:**
+- Executed unit tests and created UAT scenarios aligned to security requirements.
+- Verified outcomes against compliance and threat models.
+
+---
+
+## Task 5: Agile Methodology Alignment  
+**Objective:** Compare delivery methodologies and recommend security‑aligned approaches.
+
+**Deliverables:**
+- Evaluated Waterfall vs. Agile in context of security implementations.
+- Suggested a phased Agile rollout for security controls across teams.
+
+---
+
+## Key Outcomes  
+- Designed a secure and scalable AWS architecture guided by the Well‑Architected Framework.  
+- Upgraded IAM governance from siloed access to centralized, risk-informed RBAC.  
+- Built and documented an SSDLC pipeline with embedded CI/CD security policies.  
+- Translated security testing into enterprise deliverables aligned with compliance and threat models.
+
+---
+
+## Tools & Frameworks  
+**Cloud / IAM:** AWS IAM, Organizations, SCPs, GuardDuty, CloudTrail  
+**Security Tools:** Terraform, GitHub Actions, Open Policy Agent (OPA), Snyk  
+**Frameworks:** AWS Well‑Architected, NIST CSF, MITRE ATT&CK Cloud  
+
+---
+
+## Final Note  
+This externship mirrors Accenture client engagements in cloud security transformation. The experience provided hands-on work designing IAM governance, secure deployment pipelines, incident-readiness tools, and scalable DevSecOps frameworks—skills directly applicable to enterprise-grade roles.
 
